@@ -1,0 +1,21 @@
+# Host-side tooling only.  Training itself runs inside the TAO container, which
+# ships its own TensorFlow/CUDA stack — do NOT install TF here.
+numpy>=1.26
+pillow>=10.2
+matplotlib>=3.8
+opencv-python-headless>=4.9
+tqdm>=4.66
+python-dotenv>=1.0
+pyyaml>=6.0
+
+# Notebook
+jupyterlab>=4.1
+ipywidgets>=8.1
+
+# NGC / TAO launcher (x86_64 hosts; see README "Running on aarch64")
+nvidia-pyindex>=1.0.9; platform_machine == "x86_64"
+nvidia-tao>=5.0.0; platform_machine == "x86_64"
+
+# Dev
+pytest>=8.0
+ruff>=0.3

@@ -1,0 +1,49 @@
+# --- Data & experiment artifacts (large, regenerable) -------------------------
+data/*
+!data/.gitkeep
+results/*
+!results/.gitkeep
+pretrained_models/
+*.tlt
+*.hdf5
+*.etlt
+*.engine
+*.onnx
+*.tfrecords
+tfrecords/
+
+# --- TAO / NGC ----------------------------------------------------------------
+~/.tao_mounts.json
+tao_mounts.json
+.ngc_api_key
+*.key
+
+# --- Secrets ------------------------------------------------------------------
+.env
+.env.local
+
+# --- Python -------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.python-version
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# --- Notebooks ----------------------------------------------------------------
+.ipynb_checkpoints/
+
+# --- Editors / OS -------------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+*.swp
+!specs/.gitkeep
